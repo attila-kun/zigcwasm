@@ -6,7 +6,7 @@ async function loadWasm() {
     });
 
     // Access the exported function doCalc
-    const result = instance.exports.doCalc();
+    const result = instance.exports.doCalc(10, 2);
     document.getElementById('result').textContent = `Result of doCalc: ${result}`;
 }
 
